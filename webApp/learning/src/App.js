@@ -1,4 +1,6 @@
 import logo from './logo.svg';
+// import {p} from './Components/Paraghraph'
+import Paraghraph from './Components/Paraghraph'
 import './App.css';
 
 function App() {
@@ -6,9 +8,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+        {/* {p()} */}
+        <Paraghraph name="hamaza"/>
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -17,6 +18,8 @@ function App() {
         >
           Learn React
         </a>
+        <Paraghraph name="Farid"/>
+        {/* {p()} */}
       </header>
     </div>
   );
