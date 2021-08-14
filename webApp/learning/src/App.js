@@ -1,25 +1,12 @@
 import logo from './logo.svg';
-import './App.css';
+import Paraghraph from './Components/Paraghraph'
+import routes from './Components/config/routes';
+import './App.css'
+import Login from './Components/login/container/login';
+import Routes from './Components/config/routes';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <Routes/>
 }
 
 export default App;
