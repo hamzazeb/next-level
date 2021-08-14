@@ -19,13 +19,14 @@ const saveUsers = async (req, res) => {
 const getUsers = async (req, res) => {
     var {id} = req.params;
 
-    if(id == 0){
-        id = null;
-    }
+    // if(id == 0){
+    //     id = null;
+    // }
+    // "SELECT id, name, email from users where ($1::int is null or id = $1)", [id]
 
     try {
         const user = await pool.query(
-            "SELECT id, name, email from users where ($1::int is null or id = $1)", [id]
+            "SELECT id, name, email from users where id = $1", [id]
         )
         res.json(user.rows);
     } catch (err) {
