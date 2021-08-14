@@ -1,38 +1,142 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#app{
+	height: 100%;
+	display: flex;
+	justify-content: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container{
+	text-align: center;
+	color: #fff;
+	margin-top: 100px
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.container header{
+	font-size: 1.3rem;
+	font-weight: 700;
+	margin: 0 auto 60px auto;
+	position: relative;
+	height: 25px;
+	width: 250px;
+	overflow: hidden
 }
-
-.App-link {
-  color: #61dafb;
+		
+.header-headings{
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	width: 100%;
+	transition: all .4s cubic-bezier(.785,.135,.15,.86)
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header-headings span{
+	margin: 3px 0
 }
+.header-headings span .sign-in{
+	transform: translateY(0)
+}
+.header-headings span .sign-up{
+	transform: translateY(-25px)
+}	
+.header-headings span .forgot{
+	transform: translateY(-50px)
+}			
+.options{
+		display: flex;
+		align-items: center;
+		width: 350px
+}
+@media screen and (max-width:380px){
+	.li{
+		cursor: pointer;
+		opacity: .5;
+		transition: all .2s ease
+	}
+	.li:hover{
+		opacity: 1
+	}
+	.li:active{
+		opacity: 1
+	}
+	.li:nth-of-type(2){
+		margin-left: 15px
+	}
+	.li:last-of-type{
+		margin-left: auto
+	}	
+}
+.account-form{
+	display: flex;
+	flex-direction: column;
+	margin-top: 30px
+}	
+.account-form-fields{
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	transition: all .4s cubic-bezier(.785,.135,.15,.86)
+}
+.account-form-fields .sign-in{
+	max-height: 123px
+}
+.account-form-fields .sign-up{
+	max-height: 250px
+}
+.account-form-fields .forgot{
+	max-height: 61px
+}
+.account-form-fields input{
+	border: 0;
+	margin-bottom: 10px;
+	padding: 15px;
+	font-size: 1rem;
+	font-family: Nunito, sans-serif;
+	color: #000;
+	border-radius: 5px;	
+}
+.account-form-fields input::placeholder{
+	color: #aaa	
+}
+.account-form-fields input::-webkit-input-placeholder{
+	color: #aaa	
+}
+.account-form-fields input:-ms-input-placeholder{
+	color: #aaa	
+}
+.account-form-fields input:focus{
+	outline: none	
+}	
+	
+.btn-submit-form{
+	border: 0;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	cursor: pointer;
+	padding: 15px 0;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 1rem;
+	font-family: Nunito, sans-serif;
+	background: lighten(#4D6FE5, 5%);
+	box-shadow: 0px 1px 2px rgba(0,0,0,.13);
+	transition: all .2s ease;
+}
+.btn-submit-form:hover{
+	background: darken(#4D6FE5, 2%)
+}
+.btn-submit-form:focus, :active{
+	outline: none;
+	background: darken(#4D6FE5, 7%)
+}	
+footer{
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	padding: 30px 0;
+	text-align: center
+}
+	
+footer a{
+		color: #fff;
+		font-weight: 700;
+}
+		
