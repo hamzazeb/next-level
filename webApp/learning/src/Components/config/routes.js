@@ -9,6 +9,7 @@ const Routes=()=>{
     return(
         <Fragment>
             <BrowserRouter>
+
                 <Switch>
                     <Container> 
                         <Route exact path="/" component={Login}/>
@@ -16,6 +17,7 @@ const Routes=()=>{
                         <Route exact path="/recover/password" component={Passwords}/>
                     </Container>
                 </Switch>
+                
             </BrowserRouter>
         </Fragment>
     )
