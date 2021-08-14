@@ -1,2 +1,16 @@
 npm install create-react-app
 npx create-react-app learning
+
+cd learning
+npm install
+
+-----creating a config file-----
+routes.js requires installing react-router-dom for switching between different routes
+npm i react-router-dom --force
+
+now we need to place our components inside switch tag except navbar, sidebars and footer.
+
+after that install react-bootstrap or any other libarary you want to use for styling or grid system
+I have used react-bootstrap initially
+
+npm i react-bootstrap --force
