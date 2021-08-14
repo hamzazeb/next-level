@@ -17,7 +17,7 @@ app.get('/api/users/(:id)', apiFunction.getUsers);
 
 var server = http.createServer(app);
 
-const port = process.env.port | 5000;
+const port = 5000;
 server.listen(port, function () {
     console.log((new Date()) + `: Server is listening on port ${port}`);
 });
