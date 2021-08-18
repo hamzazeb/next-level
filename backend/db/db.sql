@@ -1,6 +1,9 @@
 CREATE TABLE users(
-    id SERIAL NOT NULL primary key,
-    name VARCHAR(30) NOT NULL,
-    email VARCHAR(30) NOT NULL,
-    password VARCHAR(10) NOT NULL
+    id SERIAL PRIMARY KEY,
+    f_name VARCHAR(20) NOT NULL,
+    l_name VARCHAR(20) NOT NULL,
+    password VARCHAR(100) NOT NULL,
+    email VARCHAR(20) NOT NULL UNIQUE,
+    phone_number VARCHAR(13) NOT NULL UNIQUE,
+    timestamp TIMESTAMPTZ NOT NULL
 );
