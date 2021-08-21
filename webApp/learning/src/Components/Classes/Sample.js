@@ -1,9 +1,19 @@
 import React from 'react'
+import {profileData} from '../APIs/API'
 
 class Welcome extends React.Component {
     constructor(props) {
         super(props);
         this.state = { name: '' };
+    }
+    myData () {
+        profileData().then((result) => {
+            console.log("myData is ", result);
+          });
+    }
+
+    componentDidMount() {
+        this.myData();
     }
     render() {
         return <div>
