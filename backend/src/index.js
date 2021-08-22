@@ -1,19 +1,13 @@
 const express = require('express');
+const app = express();
 const cors = require('cors');
 const http = require('http');
-
-const app = express();
-const apiFunction = require('./api_functions');
+const authRoute = require('./routes/auth');
 
 // middlewares
 app.use(cors());
 app.use(express.json());
-
-// save user in database
-app.post('/api/users/(:id)', apiFunction.saveUsers);
-
-// get user by id
-app.get('/api/users/(:id)', apiFunction.getUsers);
+app.use('/api/users', authRoute);
 
 var server = http.createServer(app);
 

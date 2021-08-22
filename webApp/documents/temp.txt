@@ -15,7 +15,6 @@ I have used react-bootstrap initially
 
 npm i react-bootstrap --force
 
-
 ----------Bootstrap Grid system-------------------
 
 Grid Classes
@@ -26,3 +25,6 @@ sm (for tablets - screens equal to or greater than 768px wide)
 md (for small laptops - screens equal to or greater than 992px wide)
 lg (for laptops and desktops - screens equal to or greater than 1200px wide)
 The classes above can be combined to create more dynamic and flexible layouts.
+
+https://getbootstrap.com/docs/5.0/layout/grid/
+https://getbootstrap.com/docs/4.0/layout/grid/

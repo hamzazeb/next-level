@@ -1,1 +1,2 @@
-Environment Setup: https://docs.google.com/document/d/1YC5MUAfwu9Nbsy3T0sgJNFHfYj-0kjAwrmfFNx4si30/edit?usp=sharing
+1st Lec [2020-08-14]: Environment Setup: https://docs.google.com/document/d/1YC5MUAfwu9Nbsy3T0sgJNFHfYj-0kjAwrmfFNx4si30/edit?usp=sharing
+2nd Lec [2020-08-18]: Validation + Passowrd hashing + Routes 
