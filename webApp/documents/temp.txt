@@ -27,4 +27,4 @@ lg (for laptops and desktops - screens equal to or greater than 1200px wide)
 The classes above can be combined to create more dynamic and flexible layouts.
 
 https://getbootstrap.com/docs/5.0/layout/grid/
-https://getbootstrap.com/docs/4.0/layout/grid/
+https://react-bootstrap.github.io/getting-started/introduction
