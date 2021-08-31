@@ -2,7 +2,7 @@ const router = require('express').Router();
 const pool = require('../../db/index').pool;
 
 
-router.post('/(:id)', async (req, res) => {
+router.put('/(:id)', async (req, res) => {
     
     const {id} = req.params;
     const {user_name, address, city, country, postal_code, about, dob} = req.body;
@@ -27,7 +27,7 @@ router.get('/(:id)', async (req, res) => {
         res.json(result.rows[0]);
     } catch (err) {
         console.log(err);
-        res.json("API Error");
+        res.json(err.message);
     }
 });
 
